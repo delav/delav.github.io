@@ -158,7 +158,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://theme-next.org/First/">
+    <link itemprop="mainEntityOfPage" href="https://theme-next.org/About/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/kin.jpg">
@@ -172,7 +172,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/First/" class="post-title-link" itemprop="url">关于博客</a>
+            <a href="/About/" class="post-title-link" itemprop="url">关于博客</a>
         </h2>
 
         <div class="post-meta">
@@ -203,8 +203,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/First/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="First/" itemprop="commentCount"></span>
+    <a title="disqus" href="/About/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="About/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -222,206 +222,12 @@
           <p>这是一篇关于该博客网站的信息</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/First/">
+              <a class="btn" href="/About/">
                 阅读全文 &raquo;
               </a>
             </div>
           <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://theme-next.org/next-v7-introduced/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kin.jpg">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Delav">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/next-v7-introduced/" class="post-title-link" itemprop="url">NexT v7 Introduced</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-01-05 09:57:00" itemprop="dateCreated datePublished" datetime="2019-01-05T09:57:00Z">2019-01-05</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/next-v7-introduced/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-v7-introduced/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>From this year we will start to development NexT v7. And NexT v6 will not be cutted-out for now. Instead of this, we will continue maintenance for version 6 with simultaneous development of version 7.</p>
-<h2 id="Versions-Difference"><a href="#Versions-Difference" class="headerlink" title="Versions Difference"></a>Versions Difference</h2><p>What changes planned in that versions? Good question, here they are:</p>
-<ul>
-<li>Development (<strong>v7</strong>) mean → all <strong>bugfixes</strong>, <strong>optimizations</strong> and <strong>features</strong> will be added in this version.</li>
-<li>Maintenance (<strong>v6</strong>) mean → all <strong>bugfixes</strong> and <strong>optimizations (partially)</strong> only will be added in this version.</li>
-</ul>
-<p>As we can see, v6 will be more stable version, unlike of v7. If someone want more stability with less features, recommended to use v6 without any fear about no maintenance for this version in the future.</p>
-<h2 id="Objectives-of-Version-7"><a href="#Objectives-of-Version-7" class="headerlink" title="Objectives of Version 7"></a>Objectives of Version 7</h2><p>There are several globally targets for NexT v7 changes planned:</p>
-<ul>
-<li>Replace all Nested Strings by Template Literals. This bring to code more readable (example: #557)</li>
-<li>Cut out all possible <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3RyZWUvbWFzdGVyL3NvdXJjZS9saWI=">3rd-party libraries<i class="fa fa-external-link-alt"></i></span> for provide minimum weight and maximum generation speed</li>
-<li>Targets, described in <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2lzc3Vlcy82Nw==">NexT v7.x Roadmap<i class="fa fa-external-link-alt"></i></span>.</li>
-</ul>
-<h2 id="Branching-Models"><a href="#Branching-Models" class="headerlink" title="Branching Models"></a>Branching Models</h2><p>All last year there are no problem with branching model management. All was simple:</p>
-<ol>
-<li>We had <strong>master</strong> branch, which at the same time was <strong>development</strong> and <strong>production</strong> branch.</li>
-<li><strong>Changes</strong> created in separate temporarily branches were <strong>merged into master</strong> branch via pull request&#39;s.</li>
-<li><strong>Once per month</strong> we made <strong>tag releases</strong> from current <strong>master</strong> branch.</li>
-</ol>
-<p>It was when NexT development came with single version. For now, we must support multiple versions: v6.x and v7.x, what bring some complicated as for maintainers and for users too.</p>
-<p>Last several days I thinking a lot about this and it seems the right way was successfully founded. And before understand my decision, let&#39;s see on all articles I finded.</p>
-<ol>
-<li><strong>A successful Git branching model</strong> → <span class="exturl" data-url="aHR0cHM6Ly9udmllLmNvbS9wb3N0cy9hLXN1Y2Nlc3NmdWwtZ2l0LWJyYW5jaGluZy1tb2RlbC8=">https://nvie.com/posts/a-successful-git-branching-model/<i class="fa fa-external-link-alt"></i></span><br><img data-src="https://user-images.githubusercontent.com/16944225/50646627-d8d66e80-0f76-11e9-9d6e-44a3c7a46bb4.png" alt="image"></li>
-<li><strong>Cactus model</strong> → <span class="exturl" data-url="aHR0cHM6Ly9iYXJyby5naXRodWIuaW8vMjAxNi8wMi9hLXN1Y2Nlc2Z1bC1naXQtYnJhbmNoaW5nLW1vZGVsLWNvbnNpZGVyZWQtaGFybWZ1bC8=">https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful/<i class="fa fa-external-link-alt"></i></span><br><img data-src="https://user-images.githubusercontent.com/16944225/50647494-00c6d180-0f79-11e9-9e7b-e39c1af9e84b.png" alt="image"></li>
-<li><strong>OneFlow model</strong> → <span class="exturl" data-url="aHR0cHM6Ly93d3cuZW5kb2ZsaW5lYmxvZy5jb20vb25lZmxvdy1hLWdpdC1icmFuY2hpbmctbW9kZWwtYW5kLXdvcmtmbG93">https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow<i class="fa fa-external-link-alt"></i></span><br><img data-src="https://user-images.githubusercontent.com/16944225/50647637-60bd7800-0f79-11e9-9216-41754c5d590f.png" alt="image"></li>
-<li><strong>A stable mainline branching model</strong> → <span class="exturl" data-url="aHR0cDovL3d3dy5iaXRzbmJpdGVzLmV1L2Etc3RhYmxlLW1haW5saW5lLWJyYW5jaGluZy1tb2RlbC1mb3ItZ2l0Lw==">http://www.bitsnbites.eu/a-stable-mainline-branching-model-for-git/<i class="fa fa-external-link-alt"></i></span><br><img data-src="https://user-images.githubusercontent.com/16944225/50647741-a5491380-0f79-11e9-8166-d7379ce86444.png" alt="image"><br><img data-src="https://user-images.githubusercontent.com/16944225/50647766-b8f47a00-0f79-11e9-9f5a-076ceaddd962.png" alt="image"></li>
-</ol>
-<p>So, lets comment this models:</p>
-<ol>
-<li>A little bit complicated for development. <code>master</code> branch keep only releases versions, but we already have tags once per month. And I read some negative responses about this branching model.</li>
-<li>Only one thing let me get to doubt: rebased branches. Yes, on local branches anyone can do what he&#39;s want, but we talking about remote branches, how we will working with them. This model is good, but need some changes to use it.</li>
-<li>Again: <code>rebase</code> + <code>merge --no--ff</code> – only with a little difference with allow to minimize merged commits history. Anyway, history will not linear.</li>
-<li>So, this is similar to our model, with except – releases created not only under the tags, but under branches too. As I understand, branches serve for temporary maintenance multiple software versions. And this model exactly what we need! With some changes, of course...</li>
-</ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/next-v7-introduced/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://theme-next.org/hexo-theme-next/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kin.jpg">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Delav">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <span class="exturl post-title-link post-title-link-external" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ=" itemprop="url">Welcome to the NexT Organization!<i class="fa fa-external-link-alt"></i></span>
-          
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2018-01-01 12:55:56" itemprop="dateCreated datePublished" datetime="2018-01-01T12:55:56Z">2018-01-01</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/hexo-theme-next/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="hexo-theme-next/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>«<a href="/docs/">NexT</a>» is a high quality elegant theme for <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo<i class="fa fa-external-link-alt"></i></span>. It is crafted from scratch, with love.</p>
-<h3 id="User-Guide"><a href="#User-Guide" class="headerlink" title="User Guide"></a>User Guide</h3><p>It&#39;s easy to set up NexT theme. Just follow <a href="/docs/getting-started/">documentation</a> and create your personal website!</p>
-<h3 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h3><ul>
-<li>Visit the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvYXdlc29tZS1uZXh0">Awesome NexT<i class="fa fa-external-link-alt"></i></span> list to share plugins and tutorials with other users.</li>
-<li>Join our <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL3RoZW1lX25leHQ=">Telegram<i class="fa fa-external-link-alt"></i></span> / <span class="exturl" data-url="aHR0cHM6Ly9naXR0ZXIuaW0vdGhlbWUtbmV4dA==">Gitter<i class="fa fa-external-link-alt"></i></span> / <span class="exturl" data-url="aHR0cHM6Ly9yaW90LmltL2FwcC8jL3Jvb20vI05leFQ6bWF0cml4Lm9yZw==">Riot<i class="fa fa-external-link-alt"></i></span> chats.</li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pMThuLnRoZW1lLW5leHQub3Jn">Add or improve translation<i class="fa fa-external-link-alt"></i></span> in few seconds.</li>
-<li>Report a bug in <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2lzc3Vlcy9uZXc/YXNzaWduZWVzPSZsYWJlbHM9QnVnJnRlbXBsYXRlPWJ1Zy1yZXBvcnQubWQ=">GitHub Issues<i class="fa fa-external-link-alt"></i></span>.</li>
-<li>Request a new feature on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2lzc3Vlcy9uZXc/YXNzaWduZWVzPSZsYWJlbHM9RmVhdHVyZStSZXF1ZXN0JnRlbXBsYXRlPWZlYXR1cmUtcmVxdWVzdC5tZA==">GitHub<i class="fa fa-external-link-alt"></i></span>.</li>
-<li>Vote for <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2lzc3Vlcz9xPWlzJTNBb3BlbitpcyUzQWlzc3VlK2xhYmVsJTNBJTIyRmVhdHVyZStSZXF1ZXN0JTIy">popular feature requests<i class="fa fa-external-link-alt"></i></span>.</li>
-</ul>
-
       
     </div>
 
@@ -504,7 +310,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
