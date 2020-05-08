@@ -158,103 +158,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://theme-next.org/next-6-4-0-released/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/kin.jpg">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Delav">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/next-6-4-0-released/" class="post-title-link" itemprop="url">NexT 6.4.0 Released</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2018-08-01 15:52:48" itemprop="dateCreated datePublished" datetime="2018-08-01T15:52:48Z">2018-08-01</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/next-6-4-0-released/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-6-4-0-released/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Breaking-Changes"><a href="#Breaking-Changes" class="headerlink" title="Breaking Changes"></a>Breaking Changes</h2><h3 id="Removed-HyperComments-because-for-now-only-paid-342"><a href="#Removed-HyperComments-because-for-now-only-paid-342" class="headerlink" title="Removed HyperComments because for now only paid. =( (#342)"></a>Removed HyperComments because for now only paid. =( (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzQy">#342<i class="fa fa-external-link-alt"></i></span>)</h3><h3 id="Custom-sidebar-width-amp-content-width-for-all-schemes-339"><a href="#Custom-sidebar-width-amp-content-width-for-all-schemes-339" class="headerlink" title="Custom sidebar width &amp; content width for all schemes. (#339)"></a>Custom sidebar width &amp; content width for all schemes. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzM5">#339<i class="fa fa-external-link-alt"></i></span>)</h3><h4 id="Old-configuration"><a href="#Old-configuration" class="headerlink" title="Old configuration:"></a>Old configuration:</h4><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-# Manual define the max content width</span></span><br><span class="line"><span class="deletion">-# !!Only available for Gemini Scheme currently</span></span><br><span class="line"><span class="deletion">-# Leave it empty for the default 75% (suggest not less than 1000px)</span></span><br><span class="line"><span class="deletion">-#max_content_width: 1000px</span></span><br><span class="line"></span><br><span class="line"><span class="deletion">-# Manual define the sidebar width</span></span><br><span class="line"><span class="deletion">-# !!Only available for Gemini Scheme currently</span></span><br><span class="line"><span class="deletion">-# Leave it empty for the default 240</span></span><br><span class="line"><span class="deletion">-sidebar_width:</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="New-configuration"><a href="#New-configuration" class="headerlink" title="New configuration:"></a>New configuration:</h4><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">sidebar:</span></span><br><span class="line">  <span class="comment"># Manual define the sidebar width.</span></span><br><span class="line">  <span class="comment"># If commented, will be default for:</span></span><br><span class="line">  <span class="comment"># Muse | Mist: 320</span></span><br><span class="line">  <span class="comment"># Pisces | Gemini: 240</span></span><br><span class="line">  <span class="attr">width:</span> <span class="number">300</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
-<li>Update valine comment system version. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzQ1">#345<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="Improvements"><a href="#Improvements" class="headerlink" title="Improvements"></a>Improvements</h2><ul>
-<li>Add Labels Rules guideline (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzU1">#355<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Simplify post-reward.styl (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzU5">#359<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>New Crowdin translations (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzYy">#362<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Delete youyan comment (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzYw">#360<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update UPDATE-FROM-5.1.X.md (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzI0">#324<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add CDN examples for <code>theme-next-three</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzM1">#335<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h2><ul>
-<li>Refactor add baidu_site_verification in _config.yml (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzIy">#322<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Replaced <code>&amp;mdash;</code> with <code>&amp;ndash;</code> for better visibility. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzY4">#368<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzQx">#341<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fixes indentation for <code>note</code> and <code>tabs</code> tags. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzU4">#358<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor the share tools within post-widgets (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzU3">#357<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix the post date display bug (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzAy">#302<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fixed NexT <code>package.json</code> path on Windows. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzQz">#343<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjYuMy4wLi4udjYuNC4w">comparison between 6.3.0 and 6.4.0<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni40LjA=">Detailed changes for NexT v6.4.0<i class="fa fa-external-link-alt"></i></span></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://theme-next.org/next-6-3-0-released/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -556,6 +459,147 @@
   
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://theme-next.org/next-6-0-6-released/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/kin.jpg">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Delav">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/next-6-0-6-released/" class="post-title-link" itemprop="url">NexT 6.0.6 Released</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-03-15 13:12:22" itemprop="dateCreated datePublished" datetime="2018-03-15T13:12:22Z">2018-03-15</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/next-6-0-6-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-6-0-6-released/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Since more and more contributors joined to NexT, version 6.0.6 got more improvements, additions and bugfixes. Here are some important of them:</p>
+<h3 id="Version-6-0-6"><a href="#Version-6-0-6" class="headerlink" title="Version 6.0.6"></a>Version 6.0.6</h3><ul>
+<li><span class="label warning">REMOVED</span> Duplicated meta tag keywords (Hexo v3.3.5 or higher needed).</li>
+<li><span class="label info">IMPROVED</span> Accessibility for mobile devices.</li>
+<li><span class="label success">ADDED</span> Support for [hexo-leancloud-counter-security][] plugin.</li>
+<li><span class="label success">ADDED</span> Sub-Menu feature.</li>
+<li><span class="label danger">FIXED</span> `svg` confict in Algolia.</li>
+<li><span class="label danger">FIXED</span> GitHub banner under tablet devices and adapted with `mobile_layout_economy` option.</li>
+<li><span class="label danger">FIXED</span> Margin settings consistence for Mist scheme.
+
+</li>
+</ul>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni4wLjY=">Detailed changes for NexT v6.0.6<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="Version-6-0-5"><a href="#Version-6-0-5" class="headerlink" title="Version 6.0.5"></a>Version 6.0.5</h3><ul>
+<li><span class="label info">IMPROVED</span> Allow to set custom CDN for Valine.</li>
+<li><span class="label success">ADDED</span> BreadCrumbs feature.</li>
+<li><span class="label success">ADDED</span> `include_raw` tag.</li>
+<li><span class="label danger">FIXED</span> Syntax issue about IE compatible for Valine.
+
+</li>
+</ul>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni4wLjU=">Detailed changes for NexT v6.0.5<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="Version-6-0-4"><a href="#Version-6-0-4" class="headerlink" title="Version 6.0.4"></a>Version 6.0.4</h3><ul>
+<li><span class="label primary">CHANGED</span> Busuanzi Count.</li>
+<li><span class="label info">IMPROVED</span> Used title as url in `exturl` tag if no arguments exists as title.</li>
+<li><span class="label success">ADDED</span> External urls in sidebar author links.</li>
+<li><span class="label success">ADDED</span> Vendor configurations (CDN) for [theme-next-bookmark][] and [theme-next-reading-progress][].</li>
+<li><span class="label success">ADDED</span> Support for `hexo-related-popular-posts` plugin.</li>
+<li><span class="label danger">FIXED</span> Missing `data-fancybox` attribute for fancybox.</li>
+<li><span class="label danger">FIXED</span> Use `.length` instead of `.size()` in `motion.js` and `utils.js` to make it work with jQuery 3.1.
+
+</li>
+</ul>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni4wLjQ=">Detailed changes for NexT v6.0.4<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="Version-6-0-3"><a href="#Version-6-0-3" class="headerlink" title="Version 6.0.3"></a>Version 6.0.3</h3><ul>
+<li><span class="label primary">CHANGED</span> Language codes: `fr-FR` to `fr`, `nl-NL` to `nl` and `zh-Hans` to `zh-CN`.</li>
+<li><span class="label primary">CHANGED</span> `math.per_page` by default to `true` to make math lazyloaded.</li>
+<li><span class="label info">IMPROVED</span> Make social, creative commons and footer powered links sensitive by `seo` option.</li>
+<li><span class="label success">ADDED</span> Bookmark feature as separated module: [theme-next-bookmark][].</li>
+<li><span class="label success">ADDED</span> Switch to choice whether it will unescape the HTML strings for local searching.</li>
+<li><span class="label success">ADDED</span> Support to set whether the sidebar will be shown in each single post.</li>
+<li><span class="label danger">FIXED</span> Load math script in homepage for posts or pages contained `mathjax: true` in Front-matter.</li>
+<li><span class="label danger">FIXED</span> Algolia search overlay on mobile devices.
+
+</li>
+</ul>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni4wLjM=">Detailed changes for NexT v6.0.3<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="Version-6-0-2"><a href="#Version-6-0-2" class="headerlink" title="Version 6.0.2"></a>Version 6.0.2</h3><ul>
+<li><span class="label info">IMPROVED</span> MathJax feature.</li>
+<li><span class="label success">ADDED</span> KaTeX support ([usage][katex-usage]).</li>
+<li><span class="label success">ADDED</span> Support for lazy load the Disqus comments.</li>
+<li><span class="label success">ADDED</span> `cheers_enabled` option.</li>
+<li><span class="label success">ADDED</span> `pangu` option instead of `auto_spacing` in Hexo as separated module: [theme-next-pangu][].</li>
+<li><span class="label success">ADDED</span> Load custom files from outside the theme.</li>
+<li><span class="label danger">FIXED</span> Refactored `head.swig` to right rendering pathes with `cache` option.</li>
+<li><span class="label danger">FIXED</span> Issue about the categories/tags count in `_drafts` directory.</li>
+<li><span class="label danger">FIXED</span> `theme_config` option in NexT for Hexo config.
+
+</li>
+</ul>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni4wLjI=">Detailed changes for NexT v6.0.2<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="Version-6-0-1"><a href="#Version-6-0-1" class="headerlink" title="Version 6.0.1"></a>Version 6.0.1</h3><ul>
+<li><span class="label warning">REMOVED</span> Duoshuo.</li>
+<li><span class="label success">ADDED</span> Reading progress feature as separated module: [theme-next-reading-progress][].</li>
+<li><span class="label success">ADDED</span> Badges to menu.</li>
+<li><span class="label success">ADDED</span> «Follow me on GitHub» banner option.
+
+</li>
+</ul>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni4wLjE=">Detailed changes for NexT v6.0.1<i class="fa fa-external-link-alt"></i></span></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
 
   
   <nav class="pagination">
@@ -627,7 +671,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">36</span>
+          <span class="site-state-item-count">35</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
